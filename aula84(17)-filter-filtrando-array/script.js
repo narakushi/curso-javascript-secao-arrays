@@ -52,3 +52,17 @@ const pessoas = [
   { nome: 'Wallace', idade: 47 }
 ];
 
+const pessoasComNomeGrande = pessoas.filter(pessoa => pessoa.nome.length >= 5);
+console.log('*********************');
+console.log(pessoasComNomeGrande);
+
+const pessoasComMais50 = pessoas.filter(pessoa => pessoa.idade > 50);
+console.log('*********************');
+console.log(pessoasComMais50);
+
+/*const nomesTerminaComA = pessoas.filter(pessoa => pessoa.nome[pessoa.nome.length - 1].toLowerCase() === 'a' ? pessoa : '');*/
+// ou
+const nomesTerminaComA = pessoas.filter(pessoa => pessoa.nome.toLowerCase().endsWith('a'));
+console.log("********************");
+console.log(nomesTerminaComA);
+
